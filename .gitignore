@@ -1,6 +1,4 @@
 # ignore everything except the lua and init.lua files; as well as README.md
-*
-!.gitignore
-!init.lua
-!lua/user-config.lua
-!README.md
+undodir/
+sessions/
+plugged/
