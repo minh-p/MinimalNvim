@@ -24,9 +24,19 @@ for globalName, globalVal in pairs(globals) do
 end
 
 --// set colorscheme
+vim.cmd("syntax enable")
 local colorschemeName = userConfig.colorschemeName
 if colorschemeName and not (colorschemeName == "") then
 	vim.cmd("colorscheme " .. colorschemeName)
+end
+-- manage colorscheme transparency
+if userConfig.isTransparent then
+    vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
+end
+
+--// setting file type plugin to be on or not
+if userConfig.file_type_plugin_on then
+    vim.cmd("filetype plugin on")
 end
 
 --// managing plugins with packer.nvim. I am going to use a separate module for this

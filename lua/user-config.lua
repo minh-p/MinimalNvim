@@ -43,19 +43,23 @@ local sets = {
     splitbelow = true,
     wrap = false,
     compatible = false,
-    foldmethod = "manual"
+    foldmethod = "manual",
+    -- only vim chads use wildmenu. who uses telescope or fzf anyways?
+    path = ".,/usr/include,,,**",
+    wildmenu = true
 }
 
-local globals = {}
+local globals = {
+    tokyonight_style="storm",
+    tokyonight_transparent = true,
+    tokyonight_transparent_sidebar = true,
+}
 
 local keybinds = {}
 
 local plugins = {
     {path="folke/tokyonight.nvim", branch = "main"}
 }
-
--- so stupid, we still have to do colorscheme NAME in vim.cmd
-local colorschemeName = "tokyonight"
 
 local o = {}
 
@@ -64,7 +68,9 @@ return {
 	sets = sets,
 	globals = globals,
 	keybinds = keybinds,
-	colorschemeName = colorschemeName,
+	colorschemeName = "tokyonight",
 	o = o,
-    plugins = plugins
+    plugins = plugins,
+    isTransparent = true,
+    file_type_plugin_on = true
 }
