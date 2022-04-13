@@ -46,7 +46,9 @@ local sets = {
     foldmethod = "manual",
     -- only vim chads use wildmenu. who uses telescope or fzf anyways?
     path = ".,/usr/include,,,**",
-    wildmenu = true
+    wildmenu = true,
+    spell = true,
+    spelllang = "en"
 }
 
 local globals = {
@@ -72,5 +74,6 @@ return {
 	o = o,
     plugins = plugins,
     isTransparent = true,
-    file_type_plugin_on = true
+    file_type_plugin_on = true,
+    no_terminal_numberline = true
 }

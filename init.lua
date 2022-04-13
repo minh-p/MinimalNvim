@@ -39,5 +39,10 @@ if userConfig.file_type_plugin_on then
     vim.cmd("filetype plugin on")
 end
 
+--// no terminal number line or not
+if userConfig.no_terminal_numberline then
+    vim.cmd("autocmd TermOpen * setlocal nonumber norelativenumber")
+end
+
 --// managing plugins with packer.nvim. I am going to use a separate module for this
 require("runPacker")
