@@ -7,5 +7,4 @@
 * You know, probably the minimal it would get is just a colorscheme.
 	* It's gonna be full feature though: with nvim-lsp and other stuff that is not about looking cool.
 ## Source of Inspiration
-This video pretty much inspired me: [https://youtube.com/watch?v=XA2WjJbmmoM]
-
+This video pretty much inspired me: https://youtube.com/watch?v=XA2WjJbmmoM
