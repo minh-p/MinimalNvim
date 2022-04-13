@@ -29,7 +29,7 @@ The things below is just a guide on how to do this on your own.
 ### Basic Setup
 Here is the basic setup
 
-```vimscript
+```vim
 " First, makes this only work for vim
 set nocompatible
 
