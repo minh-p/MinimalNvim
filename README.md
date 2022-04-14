@@ -45,6 +45,14 @@ vim.cmd("filetype plugin on")
 ```
 
 ### Fuzzy File Search
-```vimscript
-
+For this part, you are going to have to enable wildmenu and as well as adding ** to path.
+```vim
+set path +=**
+set wildmenu
+```
+For lua, it is a bit trickier. You can enable wildmenu easily. But, for the path you can either use vim.cmd or
+manually find the path (by seeing the output of :set path) and then appending ** after it with a comma (at least that is what in linux).
+```lua
+vim.opt.path = ".,/usr/include,,,**"
+vim.opt.wildmenu = true
 ```
