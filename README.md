@@ -101,3 +101,19 @@ vim.cmd [[
 ```
 * CR-/v/t to open in an h-split/v-split/tab
 * check |netrw-browse-maps| for more mappings
+
+### Spelling
+Use z= to see suggestions for spelling mistakes.
+* You can find out more with some google searches.
+```vim
+set spell
+set spelllang=en
+```
+```lua
+vim.opt.spell = true
+vim.opt.spelllang = "en"
+```
+
+### Language Server Protocols and Autocompletion.
+I use [nvim-lsp](https://github.com/neovim/nvim-lspconfig) and [nvim-cmp](https://github.com/hrsh7th/nvim-cmp). All of these two are plugins.
+* I heard somewhere that Autocompletion could be done with with a built-in feature. But, there you go for now!
