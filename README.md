@@ -13,7 +13,7 @@ The speaker (I think) is Max.
 The video linked above showed how to do things without plugins.
 * In the video, here are some of them:
     1. Basic Setup
-    2. Fuzzy File Search
+    2. [Fuzzy File Search](https://github.com/minh-p/nvim_config_minimal#fuzzy-file-search)
     3. Tag jumping
     4. File Browsing
     5. Snippets
