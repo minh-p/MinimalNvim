@@ -1,5 +1,4 @@
 # Minh's minimal Neovim config.
-This is a work-in-progress
 ## Preamble
 * A lot of people says why the hell I keep configuring my tools.
 * I have no idea either.
