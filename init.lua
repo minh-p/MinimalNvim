@@ -23,6 +23,9 @@ for globalName, globalVal in pairs(globals) do
 	global[globalName] = globalVal
 end
 
+--// managing plugins with packer.nvim. I am going to use a separate module for this
+require("runPacker")
+
 --// set colorscheme
 vim.cmd("syntax enable")
 local colorschemeName = userConfig.colorschemeName
@@ -56,6 +59,3 @@ if userConfig.netrwListHideChanges then
         let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
     ]]
 end
-
---// managing plugins with packer.nvim. I am going to use a separate module for this
-require("runPacker")
