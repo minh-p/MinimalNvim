@@ -40,8 +40,21 @@ if userConfig.file_type_plugin_on then
 end
 
 --// no terminal number line or not
-if userConfig.no_terminal_numberline then
+if userConfig.noTerminalNumberLine then
     vim.cmd("autocmd TermOpen * setlocal nonumber norelativenumber")
+end
+
+--// minimal tag jumping
+if userConfig.minimalTagJumping then
+    vim.cmd("command! MakeTags !ctags -R .")
+end
+
+--// hide .gitignore
+if userConfig.netrwListHideChanges then
+    vim.cmd [[
+        let g:netrw_list_hide=netrw_gitignore#Hide()
+        let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+    ]]
 end
 
 --// managing plugins with packer.nvim. I am going to use a separate module for this

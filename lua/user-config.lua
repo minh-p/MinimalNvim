@@ -55,6 +55,10 @@ local globals = {
     tokyonight_style="storm",
     tokyonight_transparent = true,
     tokyonight_transparent_sidebar = true,
+    netrw_banner = false, --disable netrw banner
+    netrw_browse_split = 4, -- open in prior window
+    netrw_altv = 1,
+    netrw_liststyle = 3,
 }
 
 local keybinds = {}
@@ -75,5 +79,7 @@ return {
     plugins = plugins,
     isTransparent = true,
     file_type_plugin_on = true,
-    no_terminal_numberline = true
+    noTerminalNumberLine = true,
+    minimalTagJumping = true,
+    netrwListHideChanges = true
 }
