@@ -59,3 +59,6 @@ end
 
 --// managing plugins with packer.nvim. I am going to use a separate module for this
 require("runPacker")
+
+--// setup nvim-lsp
+require("lsp-config")

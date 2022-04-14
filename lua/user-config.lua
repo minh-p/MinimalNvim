@@ -64,7 +64,11 @@ local globals = {
 local keybinds = {}
 
 local plugins = {
-    {path="folke/tokyonight.nvim", branch = "main"}
+    -- color scheme: tokyonight
+    {path="folke/tokyonight.nvim", branch = "main"},
+    -- nvim-lsp: their Language Server Protocol
+    {path="neovim/nvim-lspconfig", branch = "master", config = function()require("lsp-config")end},
+    {path="hrsh7th/nvim-cmp", config = function()require("cmp-config")end}
 }
 
 local o = {}
