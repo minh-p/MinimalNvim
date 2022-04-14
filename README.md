@@ -21,7 +21,8 @@ The video linked above showed how to do things without plugins.
     4. [File Browsing](https://github.com/minh-p/nvim_config_minimal/blob/main/README.md#file-browsing)
 * I also include other things in here:
     1. Color schemes by using Packer.nvim as the plugin manager.
-    2. Spell checking (which is very easy to implement).
+    2. [Spell checking](https://github.com/minh-p/MinimalNvim#spelling) (which is very easy to implement).
+    3. [Language Server Protocol and Autocompletion](https://github.com/minh-p/MinimalNvim#language-server-protocols-and-autocompletion) (2 plugins)
 
 ### Before you get started.
 My configuration has its own system to manage all of the options (or sets) or globals...
