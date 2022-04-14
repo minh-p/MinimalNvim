@@ -17,8 +17,8 @@ The video linked above showed how to do things without plugins.
 * In the video, here are some of them:
     1. [Basic Setup](https://github.com/minh-p/nvim_config_minimal#basic-setup)
     2. [Fuzzy File Search](https://github.com/minh-p/nvim_config_minimal#fuzzy-file-search)
-    3. Tag jumping
-    4. File Browsing
+    3. [Tag jumping](https://github.com/minh-p/nvim_config_minimal/blob/main/README.md#tag-jumping)
+    4. [File Browsing](https://github.com/minh-p/nvim_config_minimal/blob/main/README.md#file-browsing)
 * I also include other things in here:
     1. Color schemes by using Packer.nvim as the plugin manager.
     2. Spell checking (which is very easy to implement).
