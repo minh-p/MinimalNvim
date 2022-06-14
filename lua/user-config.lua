@@ -48,7 +48,8 @@ local sets = {
     path = ".,/usr/include,,,**",
     wildmenu = true,
     spell = true,
-    spelllang = "en"
+    spelllang = "en",
+    background = "light"
 }
 
 local globals = {
@@ -68,7 +69,10 @@ local plugins = {
     {path="folke/tokyonight.nvim", branch = "main"},
     -- nvim-lsp: their Language Server Protocol
     {path="neovim/nvim-lspconfig", branch = "master", config = function()require("lsp-config")end},
-    {path="hrsh7th/nvim-cmp", config = function()require("cmp-config")end}
+    {path="hrsh7th/nvim-cmp", config = function()require("cmp-config")end},
+    {path="kyazdani42/nvim-web-devicons", branch="master"},
+    {path="nvim-lualine/lualine.nvim", branch="master", config = function()require("lualine-config")end},
+    {path="shaunsingh/solarized.nvim", branch="master"}
 }
 
 local o = {}
@@ -78,7 +82,7 @@ return {
 	sets = sets,
 	globals = globals,
 	keybinds = keybinds,
-	colorschemeName = "tokyonight",
+	colorschemeName = "solarized",
 	o = o,
     plugins = plugins,
     isTransparent = true,
